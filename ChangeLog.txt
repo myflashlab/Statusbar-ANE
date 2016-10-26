@@ -1,0 +1,4 @@
+Statusbar Air Native Extension
+
+*Oct 27, 2016 - V1.0.0*
+* beginning of the journey!
