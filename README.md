@@ -1,4 +1,4 @@
-# Status ANE V1.0.0 for iOS
+# Status ANE V1.0.1 for iOS
 If you ever wished you had full control over the iOS Statusbar, well, this Adobe AIR Native extension has been built just to do that. You can hide/show the Statusbar at runtime while deciding on the animation type. Moreover, you can change the Style of the Statusbar to make it look good on dark and light backgrounds. And that's not all! The Statusbar ANE will tell you the height of the Statusbar at any given time so you can easily adjust your content according to the possible height changes.
 
 *Main Features*
@@ -43,10 +43,10 @@ FOR iOS:
 	<InfoAdditions>
 		
 		<!--
-			iOS 7.0 or higher can support this ANE
+			iOS 8.0 or higher can support this ANE
 		-->
 		<key>MinimumOSVersion</key>
-		<string>7.0</string>
+		<string>8.0</string>
 		
 		<!-- Required by the statusbar.ane -->
 		<key>UIViewControllerBasedStatusBarAppearance</key>
@@ -65,13 +65,17 @@ Embedding the ANE:
 	
 	<extensionID>com.myflashlab.air.extensions.statusbar</extensionID>
 	
+	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
+	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
+	
   </extensions>
 -->
 ```
 
 # Requirements 
-1. iOS SDK 7.0 or higher
+1. iOS SDK 8.0 or higher
 2. Air SDK 22 or higher
+3. overrideAir must be added to your project as a dependency
 
 # Commercial Version
 http://www.myflashlabs.com/product/statusbar-control-air-native-extension/
@@ -79,5 +83,9 @@ http://www.myflashlabs.com/product/statusbar-control-air-native-extension/
 ![Badge ANE](http://www.myflashlabs.com/wp-content/uploads/2016/10/product_adobe-air-ane-extension-statusbar-595x738.jpg)
 
 # Changelog
+*Mar 30, 2017 - V1.0.1
+* This ANE is dependent on overrideAir.ane from now on. You need to add these ANEs to your project too. [Download them from here](https://github.com/myflashlab/common-dependencies-ANE).
+* Min iOS version to support the ANE is 8.0 from now on.
+
 *Oct 27, 2016 - V1.0.0*
 * beginning of the journey!

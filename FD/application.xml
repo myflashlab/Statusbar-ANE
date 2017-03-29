@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/21.0">
+<application xmlns="http://ns.adobe.com/air/application/24.0">
   <id>com.doitflash.statusbar</id>
-  <versionNumber>1.0.0</versionNumber>
+  <versionNumber>1.0.1</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exStatusbar</filename>
   <name>Statusbar</name>
@@ -35,10 +35,10 @@
 	 <InfoAdditions><![CDATA[
 	
 		<!--
-			iOS 7.0 or higher can support this ANE
+			iOS 8.0 or higher can support this ANE
 		-->
 		<key>MinimumOSVersion</key>
-		<string>7.0</string>
+		<string>8.0</string>
 		 
 		<key>UIPrerenderedIcon</key>
 		<true/>
@@ -92,6 +92,9 @@
   <extensions>
 	
 	<extensionID>com.myflashlab.air.extensions.statusbar</extensionID>
+	
+	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
+	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 	
   </extensions>
 </application>
