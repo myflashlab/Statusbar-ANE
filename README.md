@@ -1,4 +1,4 @@
-# Status ANE V1.0.1 for iOS
+# Status ANE V1.0.2 for iOS
 If you ever wished you had full control over the iOS Statusbar, well, this Adobe AIR Native extension has been built just to do that. You can hide/show the Statusbar at runtime while deciding on the animation type. Moreover, you can change the Style of the Statusbar to make it look good on dark and light backgrounds. And that's not all! The Statusbar ANE will tell you the height of the Statusbar at any given time so you can easily adjust your content according to the possible height changes.
 
 *Main Features*
@@ -10,8 +10,7 @@ If you ever wished you had full control over the iOS Statusbar, well, this Adobe
 # asdoc
 [find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/index.html?com/myflashlab/air/extensions/statusbar/package-detail.html)  
 
-**NOTICE**: the demo ANE works only after you hit the "OK" button in the dialog which opens. in your tests make sure that you are NOT calling other ANE methods prior to hitting the "OK" button.
-[Download the ANE](https://github.com/myflashlab/Status-ANE/tree/master/FD/lib)
+[Download demo ANE](https://github.com/myflashlab/Status-ANE/tree/master/AIR/lib)
 
 # Air Usage
 ```actionscript
@@ -83,6 +82,9 @@ http://www.myflashlabs.com/product/statusbar-control-air-native-extension/
 ![Badge ANE](http://www.myflashlabs.com/wp-content/uploads/2016/10/product_adobe-air-ane-extension-statusbar-595x738.jpg)
 
 # Changelog
+*Dec 15, 2017 - V1.0.2
+* Optimized for [ANE-LAB software](https://github.com/myflashlab/ANE-LAB).
+
 *Mar 30, 2017 - V1.0.1
 * This ANE is dependent on overrideAir.ane from now on. You need to add these ANEs to your project too. [Download them from here](https://github.com/myflashlab/common-dependencies-ANE).
 * Min iOS version to support the ANE is 8.0 from now on.
