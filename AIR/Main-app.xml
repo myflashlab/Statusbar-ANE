@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/24.0">
+<application xmlns="http://ns.adobe.com/air/application/31.0">
   <id>com.doitflash.statusbar</id>
-  <versionNumber>1.0.2</versionNumber>
+  <versionNumber>1.0.3</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exStatusbar</filename>
   <name>Statusbar</name>
