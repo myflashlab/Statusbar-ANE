@@ -77,9 +77,9 @@ Embedding the ANE:
 3. overrideAir must be added to your project as a dependency
 
 # Commercial Version
-http://www.myflashlabs.com/product/statusbar-control-air-native-extension/
+https://www.myflashlabs.com/product/statusbar-control-air-native-extension/
 
-![Badge ANE](http://www.myflashlabs.com/wp-content/uploads/2016/10/product_adobe-air-ane-extension-statusbar-595x738.jpg)
+[![Badge ANE](https://www.myflashlabs.com/wp-content/uploads/2016/10/product_adobe-air-ane-extension-statusbar-2018-595x738.jpg)](https://www.myflashlabs.com/product/statusbar-control-air-native-extension/)
 
 # Changelog
 *Nov 18, 2018 - V1.0.3*
