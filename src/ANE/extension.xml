@@ -1,0 +1,63 @@
+<extension xmlns="http://ns.adobe.com/air/extension/20.0">
+  <id>com.myflashlab.air.extensions.statusbar</id>
+  <versionNumber>1.0.3</versionNumber>
+  <copyright>2018, MyFlashLabs Team. All rights reserved.</copyright>
+  <description>
+		<text xml:lang="en">Air Native Extension!</text> 
+  </description> 
+  <platforms>
+  
+    <platform name="Android-ARM">
+		<applicationDeployment>
+			<!-- <nativeLibrary>classes.jar</nativeLibrary>
+			<initializer>com.myflashlab.badge.MyExtension</initializer>
+			<finalizer>com.myflashlab.badge.MyExtension</finalizer> -->
+		</applicationDeployment>
+    </platform>
+	
+	<platform name="Android-x86">
+		<applicationDeployment>
+			<!-- <nativeLibrary>classes.jar</nativeLibrary>
+			<initializer>com.myflashlab.badge.MyExtension</initializer>
+			<finalizer>com.myflashlab.badge.MyExtension</finalizer> -->
+		</applicationDeployment>
+    </platform>
+	
+	<platform name="iPhone-ARM">
+		<applicationDeployment>
+			<nativeLibrary>libexStatusbar.a</nativeLibrary>
+			<initializer>comMyflashlabsStatusbarExtensionInitializer</initializer>
+			<finalizer>comMyflashlabsStatusbarExtensionFinalizer</finalizer>
+		</applicationDeployment>
+	</platform>
+	
+	<platform name="default"> 
+		<applicationDeployment/>
+	</platform> 
+	
+  </platforms>
+</extension>
+
+<!-- ANE SETUP
+{
+	"minAirVersion":"25.0",
+	"minSwfVersion":"36",
+	"miniOS":"8.0",
+	"platforms":[
+		{
+			"platform":"ios",
+			"dependencies":[
+				{
+					"id":"com.myflashlab.air.extensions.dependency.overrideAir",
+					"v":"5.6.0"
+				}
+			],
+			"manifest":[
+				{
+					"node":"<InfoAdditions><key>UIViewControllerBasedStatusBarAppearance</key><false/></InfoAdditions>"
+				}
+			]
+		}
+	]
+}
+-->

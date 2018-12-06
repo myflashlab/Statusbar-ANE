@@ -1,21 +1,27 @@
-# Status ANE V1.0.3 for iOS
+# Status ANE for iOS Adobe AIR apps #
 If you ever wished you had full control over the iOS Statusbar, well, this Adobe AIR Native extension has been built just to do that. You can hide/show the Statusbar at runtime while deciding on the animation type. Moreover, you can change the Style of the Statusbar to make it look good on dark and light backgrounds. And that's not all! The Statusbar ANE will tell you the height of the Statusbar at any given time so you can easily adjust your content according to the possible height changes.
 
-*Main Features*
+**Main Features**
 1. Hide/show the Statusbar and decide on the animation
-2. Change the Statusbar Style to fit dark/light backgrounds
-3. get the height of the Statusbar so you can adjust your AIR layout with it
-4. Listen to size changes at runtime. For example when user is on a phone and using your app.
+1. Change the Statusbar Style to fit dark/light backgrounds
+1. get the height of the Statusbar so you can adjust your AIR layout with it
+1. Listen to size changes at runtime. For example when user is on a phone and using your app.
 
-# asdoc
-[find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/index.html?com/myflashlab/air/extensions/statusbar/package-detail.html)  
+* [Click here for ASDOC](https://myflashlab.github.io/asdoc/index.html?com/myflashlab/air/extensions/statusbar/package-detail.html)
+* [See the ANE setup requirements](https://github.com/myflashlab/Statusbar-ANE/blob/master/src/ANE/extension.xml)
 
-[Download demo ANE](https://github.com/myflashlab/Status-ANE/tree/master/AIR/lib)
+**IMPORTANT:** Implementing ANEs in your AIR projects means you may be required to add some [dependencies](https://github.com/myflashlab/common-dependencies-ANE) or copy some frameworks or editing your app's manifest file. Our ANE setup instruction is designed in a human-readable format but you may still need to familiarize yourself with this format. [Read this post for more information](https://www.myflashlabs.com/understanding-ane-setup-instruction/)
+
+If you think manually setting up ANEs in your projects is confusing or time-consuming, you better check the [ANELAB Software](https://github.com/myflashlab/ANE-LAB/).
+
+[![The ANE-LAB Software](https://www.myflashlabs.com/wp-content/uploads/2017/12/myflashlabs-ANE-LAB_features.jpg)](https://github.com/myflashlab/ANE-LAB/)
+
+# Tech Support #
+If you need our professional support to help you with implementing and using the ANE in your project, you can join [MyFlashLabs Club](https://www.myflashlabs.com/product/myflashlabs-club-membership/) or buy a [premium support package](https://www.myflashlabs.com/product/myflashlabs-support/). Otherwise, you may create new issues at this repository and the community might help you.
 
 # Air Usage
 ```actionscript
-import com.myflashlab.air.extensions.statusbar.Statusbar;
-import com.myflashlab.air.extensions.statusbar.StatusbarEvents;
+import com.myflashlab.air.extensions.statusbar.*;
 
 Statusbar.init();
 
@@ -33,65 +39,16 @@ trace(Statusbar.height);
 Statusbar.changeStatusbarStyle(Statusbar.BAR_STYLE_DEFAULT, true);
 Statusbar.changeStatusbarStyle(Statusbar.BAR_STYLE_LIGHT, true);
 ```
+Are you using this ANE in your project? Maybe you'd like to buy us a beer :beer:?
 
-# Air .xml manifest
-```xml
-<!--
-FOR iOS:
--->
-	<InfoAdditions>
-		
-		<!--
-			iOS 8.0 or higher can support this ANE
-		-->
-		<key>MinimumOSVersion</key>
-		<string>8.0</string>
-		
-		<!-- Required by the statusbar.ane -->
-		<key>UIViewControllerBasedStatusBarAppearance</key>
-		<false/>
-		
-	</InfoAdditions>
-	
-	
-	
-	
-	
-<!--
-Embedding the ANE:
--->
-  <extensions>
-	
-	<extensionID>com.myflashlab.air.extensions.statusbar</extensionID>
-	
-	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
-	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
-	
-  </extensions>
--->
-```
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=payments@myflashlabs.com&lc=US&item_name=Donation+to+RateMe+ANE&no_note=0&cn=&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
 
-# Requirements 
-1. iOS SDK 8.0 or higher
-2. Air SDK 22 or higher
-3. overrideAir must be added to your project as a dependency
+Add your name to the below list? Donate anything more than $100 and it will be.
 
-# Commercial Version
-https://www.myflashlabs.com/product/statusbar-control-air-native-extension/
-
-[![Badge ANE](https://www.myflashlabs.com/wp-content/uploads/2016/10/product_adobe-air-ane-extension-statusbar-2018-595x738.jpg)](https://www.myflashlabs.com/product/statusbar-control-air-native-extension/)
-
-# Changelog
-*Nov 18, 2018 - V1.0.3*
-* Works with OverrideAir ANE V5.6.1 or higher
-* Works with ANELAB V1.1.26 or higher
-
-*Dec 15, 2017 - V1.0.2
-* Optimized for [ANE-LAB software](https://github.com/myflashlab/ANE-LAB).
-
-*Mar 30, 2017 - V1.0.1
-* This ANE is dependent on overrideAir.ane from now on. You need to add these ANEs to your project too. [Download them from here](https://github.com/myflashlab/common-dependencies-ANE).
-* Min iOS version to support the ANE is 8.0 from now on.
-
-*Oct 27, 2016 - V1.0.0*
-* beginning of the journey!
+## Sponsored by... ##
+<table align="left">
+    <tr>
+        <td align="left"><img src="https://via.placeholder.com/128?text=LOGO" width="60" height="60"></td>
+        <td align="left"><a href="#">your_website.com</a><br>Your company motto can be here!</td>
+    </tr>
+</table>
