@@ -48,7 +48,7 @@ Add your name to the below list? Donate anything more than $100 and it will be.
 ## Sponsored by... ##
 <table align="left">
     <tr>
-        <td align="left"><img src="https://via.placeholder.com/128?text=LOGO" width="60" height="60"></td>
-        <td align="left"><a href="#">your_website.com</a><br>Your company motto can be here!</td>
+        <td align="left"><img src="https://myflashlab.github.io/sponsors/MisoDuzek.jpg" width="60" height="60"></td>
+        <td align="left">Miso Duzek<br>Simplicity is the ultimate sophistication</td>
     </tr>
 </table>
