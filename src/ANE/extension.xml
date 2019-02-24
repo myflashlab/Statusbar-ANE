@@ -42,14 +42,14 @@
 {
 	"minAirVersion":"25.0",
 	"minSwfVersion":"36",
-	"miniOS":"8.0",
+	"miniOS":"9.0",
 	"platforms":[
 		{
 			"platform":"ios",
 			"dependencies":[
 				{
 					"id":"com.myflashlab.air.extensions.dependency.overrideAir",
-					"v":"5.6.0"
+					"v":"6.1.0"
 				}
 			],
 			"manifest":[
