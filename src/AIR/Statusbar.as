@@ -13,6 +13,8 @@ package com.myflashlab.air.extensions.statusbar
 	 */
 	public class Statusbar
 	{
+		private static const DEMO_ANE:Boolean = false;
+		
 		public static const ANIMATION_NONE:int = 0;
 		public static const ANIMATION_FADE:int = 1;
 		public static const ANIMATION_SLIDE:int = 2;
@@ -21,7 +23,7 @@ package com.myflashlab.air.extensions.statusbar
 		public static const BAR_STYLE_LIGHT:int = 2;
 		
 		public static const EXTENSION_ID:String = "com.myflashlab.air.extensions.statusbar";
-		public static const VERSION:String = "1.0.3";
+		public static const VERSION:String = "1.1.0";
 		private var _context:ExtensionContext;
 		
 		private static var _ex:Statusbar;
@@ -108,6 +110,21 @@ package com.myflashlab.air.extensions.statusbar
 		}
 		
 		/**
+		 * <p>
+		 * allows the HomeIndicator to automatically hide. This will not guarantee that it will be always hidden. Read
+		 * iOS docs for moer information: https://developer.apple.com/documentation/uikit/uiviewcontroller/2887510-prefershomeindicatorautohidden?language=objc
+		 * </p>
+		 *
+		 * <p>
+		 * <b>Notice:</b> You can call this method only once in your app lifetime. Other calls will be simply ignored.
+		 * </p>
+		 */
+		public static function allowHomeIndicatorAutoHide():void
+		{
+			_ex._context.call("command", "allowHomeIndicatorAutoHide");
+		}
+		
+		/**
 		 * Call this method to remove the native listener on watching the statusbar change frames 
 		 * and dispose the ANE.
 		 */
@@ -124,10 +141,5 @@ package com.myflashlab.air.extensions.statusbar
 		{
 			return _listener;
 		}
-		
-// ------------------------------------------------------------------------------------------------------------------------------------ Check Club Member
-		
-		/** @private */
-		internal static const DEMO_ANE:Boolean = false;
 	}
 }

@@ -1,7 +1,7 @@
 <extension xmlns="http://ns.adobe.com/air/extension/20.0">
   <id>com.myflashlab.air.extensions.statusbar</id>
-  <versionNumber>1.0.3</versionNumber>
-  <copyright>2018, MyFlashLabs Team. All rights reserved.</copyright>
+  <versionNumber>1.1.0</versionNumber>
+  <copyright>2019, MyFlashLabs Team. All rights reserved.</copyright>
   <description>
 		<text xml:lang="en">Air Native Extension!</text> 
   </description> 

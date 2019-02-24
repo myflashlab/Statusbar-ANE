@@ -3,11 +3,12 @@
 //  overrideNative
 //
 //  Created by Hadi Tavakoli on 2/12/17.
-//  Copyright © 2017 Ali Tavakoli. All rights reserved.
+//  Copyright © 2017 MyFlashLabs. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "FlashRuntimeExtensions.h"
+//#import <UserNotifications/UserNotifications.h>
 #import <UIKit/UIKit.h>
 
 @interface MyFlashLabsClass : NSObject
@@ -28,6 +29,8 @@
 -(NSString*)retriveCommandNotFound;
 
 // setter - getter
+-(void)saveShortcutItem:(UIApplicationShortcutItem*)shortcutItem;
+-(UIApplicationShortcutItem*)retriveShortcutItem;
 -(void)saveApplication:(UIApplication*)app;
 -(UIApplication*)retriveApplication;
 -(void)saveLaunchingOptions:(NSDictionary*)value;
@@ -64,6 +67,13 @@
 -(NSString*)retriveSourceApplication;
 -(void)saveAnnotation:(id)value;
 -(id)retriveAnnotation;
+//-(void)saveUserNotificationCenter:(UNUserNotificationCenter*)center;
+//-(UNUserNotificationCenter*)retriveUserNotificationCenter;
+//-(void)saveNotification:(UNNotification*)notification;
+//-(UNNotification*)retriveNotification;
+//-(void)saveNotificationResponse:(UNNotificationResponse*)response;
+//-(UNNotificationResponse*)retriveNotificationResponse;
+
 
 // conversions
 +(double)AirToIos_Double:(FREObject)value;

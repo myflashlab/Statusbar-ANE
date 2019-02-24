@@ -9,10 +9,12 @@
 #import "BaseClassStatusbar.h"
 #import "exStatusbar.h"
 #import "MyFlashLabsClass.h"
+#import "NSObject+MHOverride.h"
 
 @implementation BaseClassStatusbar
 {
     BOOL _hidden;
+    BOOL _isHomeIndicatorAlreadySet;
 }
 
 @synthesize okIsTouch;
@@ -112,6 +114,43 @@
     [[UIApplication sharedApplication] setStatusBarStyle:style animated:haveAnimation];
 }
 
+-(void)allowHomeIndicatorAutoHide
+{
+    if(_isHomeIndicatorAlreadySet)
+    {
+        [self toTrace:@"setting HomeIndicator is only permitted to be called once! other calls will be ignored!"];
+        return;
+    }
+    
+    _isHomeIndicatorAlreadySet = YES;
+    
+    NSOperatingSystemVersion osv = (NSOperatingSystemVersion){11, 0, 0};
+    if ([[NSProcessInfo processInfo] isOperatingSystemAtLeastVersion:osv])
+    {
+        UIViewController* rvc = [[UIApplication sharedApplication] keyWindow].rootViewController;
+        [rvc mh_overrideSelector:@selector(prefersHomeIndicatorAutoHidden)
+                       withBlock:(__bridge void *) ^BOOL(id _self, BOOL animated)
+         {
+             //[self toTrace:@"allowHomeIndicatorAutoHide OVERRIDE DONE!"];
+             return YES;
+         }];
+        
+        //[self toTrace:[NSString stringWithFormat:@"rootViewController -class: %@", NSStringFromClass([rvc class])]];
+        //[self toTrace:[NSString stringWithFormat:@"rootViewController objc_getClassName: %s", object_getClassName(rvc)]];
+        
+        [self toTrace:@"Confirming if OVERRIDE is DONE by calling the property..."];
+        BOOL v = rvc.prefersHomeIndicatorAutoHidden;
+        [rvc setNeedsUpdateOfHomeIndicatorAutoHidden];
+        
+        if(v) [self toTrace:@"allowHomeIndicatorAutoHide OVERRIDE DONE!"];
+        else [self toTrace:@"allowHomeIndicatorAutoHide OVERRIDE is NOT DONE!!!"];
+    }
+    else
+    {
+        [self toTrace:@"'prefersHomeIndicatorAutoHidden' is only available on iOS 11.0 or newer"];
+    }
+}
+
 -(void)dispose
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self
@@ -144,6 +183,13 @@
 {
     // let AIR know that Statusbar frame has changed
     [exStatusbar dispatchEventEcode:FRAME_CHANGED andElevel:@""];
+}
+
+-(void)toTrace:(NSString*)value
+{
+    [[MyFlashLabsClass sharedInstance] toTrace:ANE_NAME
+                                     className:NSStringFromClass([self class])
+                                           msg:value];
 }
 
 @end

@@ -6,6 +6,7 @@ If you ever wished you had full control over the iOS Statusbar, well, this Adobe
 1. Change the Statusbar Style to fit dark/light backgrounds
 1. get the height of the Statusbar so you can adjust your AIR layout with it
 1. Listen to size changes at runtime. For example when user is on a phone and using your app.
+1. Hide the HomeIndicator from iPhoneX so it won't overlap your AIR content
 
 * [Click here for ASDOC](https://myflashlab.github.io/asdoc/index.html?com/myflashlab/air/extensions/statusbar/package-detail.html)
 * [See the ANE setup requirements](https://github.com/myflashlab/Statusbar-ANE/blob/master/src/ANE/extension.xml)
@@ -38,6 +39,10 @@ trace(Statusbar.height);
 // change the Statusbar style to make it readable at dark/light backgrounds
 Statusbar.changeStatusbarStyle(Statusbar.BAR_STYLE_DEFAULT, true);
 Statusbar.changeStatusbarStyle(Statusbar.BAR_STYLE_LIGHT, true);
+
+// Remove the iPhoneX HomeIndicator so it won't overlap your content
+// you can call this method only once! other calls are ignored.
+Statusbar.allowHomeIndicatorAutoHide();
 ```
 Are you using this ANE in your project? Maybe you'd like to buy us a beer :beer:?
 

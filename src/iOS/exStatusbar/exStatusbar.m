@@ -20,6 +20,7 @@ typedef enum
     getStatusbarHeight,
     hideStatusbar,
     changeStatusbarStyle,
+    allowHomeIndicatorAutoHide,
     
     dispose,
     
@@ -42,6 +43,7 @@ commandType getEnumTitleStatusbar(NSString *theType)
     CHECK_ENUM(getStatusbarHeight);
     CHECK_ENUM(hideStatusbar);
     CHECK_ENUM(changeStatusbarStyle);
+    CHECK_ENUM(allowHomeIndicatorAutoHide);
     
     CHECK_ENUM(dispose);
     
@@ -99,6 +101,11 @@ FREObject commandStatusbar(FREContext ctx, void* funcData, uint32_t argc, FREObj
             
             [base changeStatusbarStyle:[MyFlashLabsClass AirToIos_Integer:argv[1]]
                          withAnimation:[MyFlashLabsClass AirToIos_Boolean:argv[2]]];
+            
+            break;
+        case allowHomeIndicatorAutoHide:
+            
+            [base allowHomeIndicatorAutoHide];
             
             break;
         case dispose:

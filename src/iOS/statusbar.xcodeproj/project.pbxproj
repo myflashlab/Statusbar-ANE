@@ -45,6 +45,7 @@
 		FD31C1D21E66B45B0027E5FD /* libexOverrideNative.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexOverrideNative.a; sourceTree = "<group>"; };
 		FD31C1D31E66B45B0027E5FD /* MyFlashLabsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlashLabsClass.h; sourceTree = "<group>"; };
 		FD31C1D51E66B4750027E5FD /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		FD7A30502222AACB0089394B /* NSObject+MHOverride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MHOverride.h"; sourceTree = "<group>"; };
 		FD8142631DC0A36E008A5FD0 /* libexStatusbar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libexStatusbar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8142651DC0A36E008A5FD0 /* exStatusbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exStatusbar.h; sourceTree = "<group>"; };
 		FD8142671DC0A36E008A5FD0 /* exStatusbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exStatusbar.m; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 			children = (
 				FD31C1D21E66B45B0027E5FD /* libexOverrideNative.a */,
 				FD31C1D31E66B45B0027E5FD /* MyFlashLabsClass.h */,
+				FD7A30502222AACB0089394B /* NSObject+MHOverride.h */,
 			);
 			path = framework;
 			sourceTree = "<group>";

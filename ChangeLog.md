@@ -1,7 +1,11 @@
 Statusbar Air Native Extension
 
+*Feb 24, 2019 - V1.1.0*
+* Requires [OverrideAir ANE V6.1.0+](https://github.com/myflashlab/common-dependencies-ANE/tree/master/overridAir)
+* Added method ```Statusbar.allowHomeIndicatorAutoHide();```
+
 *Nov 18, 2018 - V1.0.3*
-* Works with OverrideAir ANE V5.6.1 or higher
+* Works with OverrideAir ANE V5.6.1+
 * Works with ANELAB V1.1.26 or higher
 
 *Dec 15, 2017 - V1.0.2

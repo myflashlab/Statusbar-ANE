@@ -21,6 +21,7 @@
 -(double)statusBarHeight;
 -(void)hideStatusbar:(BOOL)value withAnimation:(int)animationType;
 -(void)changeStatusbarStyle:(int)barStyle withAnimation:(BOOL)haveAnimation;
+-(void)allowHomeIndicatorAutoHide;
 
 -(void)dispose;
 
