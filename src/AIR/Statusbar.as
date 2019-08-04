@@ -13,7 +13,7 @@ package com.myflashlab.air.extensions.statusbar
 	 */
 	public class Statusbar
 	{
-		private static const DEMO_ANE:Boolean = false;
+		private static const DEMO_ANE:Boolean = true;
 		
 		public static const ANIMATION_NONE:int = 0;
 		public static const ANIMATION_FADE:int = 1;
@@ -23,7 +23,7 @@ package com.myflashlab.air.extensions.statusbar
 		public static const BAR_STYLE_LIGHT:int = 2;
 		
 		public static const EXTENSION_ID:String = "com.myflashlab.air.extensions.statusbar";
-		public static const VERSION:String = "1.1.0";
+		public static const VERSION:String = "1.1.1";
 		private var _context:ExtensionContext;
 		
 		private static var _ex:Statusbar;

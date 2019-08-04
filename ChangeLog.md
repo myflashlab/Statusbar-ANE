@@ -1,5 +1,8 @@
 Statusbar Air Native Extension
 
+*Aug 4, 2019 - V1.1.1*
+* Supports iOS 10+
+
 *Feb 24, 2019 - V1.1.0*
 * Requires [OverrideAir ANE V6.1.0+](https://github.com/myflashlab/common-dependencies-ANE/tree/master/overridAir)
 * Added method ```Statusbar.allowHomeIndicatorAutoHide();```
